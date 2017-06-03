@@ -9,13 +9,13 @@ Alternate Location for img.shields.io Badges
     
 ### Background
 
-Many R packages use badges in their (R)markdown sources.  Currently, something "bad" between the default
-[pandoc](http://pandoc.org/) binary and the [shields.io](https://shields.io) service which serves these. 
-Some sort of TLS handshake goes bad. 
+Many R packages use badges in their (R)markdown sources.  Currently, something "bad" happens between the default
+[pandoc](http://pandoc.org/) binary and the [shields.io](https://shields.io) service which provides these badges: 
+some sort of TLS handshake goes bad and the processing aborts. 
 
 Which means that at least for now, all R processing of .Rmd or .md files using [pandoc](http://pandoc.org/) and containing 
 references to [shields.io](https://shields.io) fails.  Which is not good.  Hence this simple cache.  A first package using
-in its `README.md` is [RcppArmadillo](https://github.com/RcppCore/RcppArmadillo). 
+it in its `README.md` is [RcppArmadillo](https://github.com/RcppCore/RcppArmadillo). 
 
 ### Author
 
